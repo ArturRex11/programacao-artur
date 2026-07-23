@@ -14,15 +14,15 @@ function toogleMode() {
   //substituir a imagem
   if (html.classList.contains("light")) {
     //se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "https://github.com/ArturRex11.png")
   } else {
     //se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/unnamed.jpg")
   }
 
   if (html.classList.contains("light")) {
-    img.setAttribute("alt", "foto de um cara com oculos escuro")
+    img.setAttribute("alt", "foto do gmail do Artur")
   } else {
-    img.setAttribute("alt", "foto de um cara")
+    img.setAttribute("alt", "foto do github do Artur")
   }
 }
