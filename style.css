@@ -165,7 +165,7 @@ ul li a:hover {
 /*media queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./asssets/bg-desltop.jpg);
+    --bg-url: url(./asssets/bg-desktop.jpg);
   }
 
   .light{
