@@ -31,7 +31,9 @@ body {
   */
   /*background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  min-height: 100dvh;
+  padding-bottom: 32px;
+  overflow-x: hidden;
 }
 
 body * {
@@ -43,7 +45,7 @@ body * {
   width: 100%;
   max-width: 588px;
   margin: 56px auto 0px;
-  padding: 0 24px;
+  padding: 0 24px 24px;
 }
 
 /* profile */
@@ -201,6 +203,42 @@ ul li a:hover {
   padding: 24px 0;
 }
 /*media queries*/
+@media (max-width: 420px) {
+  #container {
+    padding: 0 16px 24px;
+    margin-top: 24px;
+  }
+
+  #profile {
+    padding: 16px 12px 8px;
+  }
+
+  #profile img {
+    width: 96px;
+  }
+
+  #about {
+    padding: 16px;
+  }
+
+  #about p {
+    font-size: 13px;
+  }
+
+  .about-highlights {
+    gap: 6px;
+  }
+
+  .about-highlights span {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  #social-links {
+    padding: 16px 0 8px;
+  }
+}
+
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
